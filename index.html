@@ -13,15 +13,15 @@
     <!-- Header principal (cabecera) -->
     <header class="header">
         <div class="header__logo">
-            <a href="./index.html" class="header__logo-link">Catástrofes Naturales</a>
+            <a href="./index.html" class="header__logo-link">CN</a>
         </div>
 
         <!-- Menú -->
         <nav class="header__nav">
             <ul class="header__menu">
-                <li class="header__menu-item"><a href="#donaciones" class="header__menu-link">Donaciones</a></li>
-                <li class="header__menu-item"><a href="#voluntarios" class="header__menu-link">Voluntarios</a></li>
-                <li class="header__menu-item"><a href="#solicitar-ayuda" class="header__menu-link">Ayuda</a>
+                <li class="header__menu-item"><a href="./" class="header__menu-link">Donaciones</a></li>
+                <li class="header__menu-item"><a href="./" class="header__menu-link">Voluntarios</a></li>
+                <li class="header__menu-item"><a href="./" class="header__menu-link">Ayuda</a>
                 </li>
             </ul>
         </nav>
@@ -29,6 +29,12 @@
 
     <!-- Main (contenido principal) -->
     <main class="main">
+
+        <section class="main-title">
+            <h1 class="main-title__title"><strong>Cástrofes Naturales</strong><br>en 2024</h1>
+        </section>
+
+        <!-- Sección de catástrofes -->
         <section class="catastrophes">
             <!-- Tarjeta de catástrofe 1 -->
             <div class="catastrophe-card">
@@ -37,16 +43,12 @@
                     <div class="catastrophe-card__overlay">
                         <h2 class="catastrophe-card__title">DANA en Valencia</h2>
                         <span class="catastrophe-card__date">29/10/2024</span>
-                        <a href="./dana-valencia-2024.html"class="catastrophe-card__link">
+                        <a href="./dana-valencia-2024.html" class="catastrophe-card__link">
                             <button class="catastrophe-card__button">Ver Más</button>
                         </a>
                     </div>
                 </div>
             </div>
-
-        </section>
-
-        <section class="catastrophes">
             <!-- Tarjeta de catástrofe 2 -->
             <div class="catastrophe-card">
                 <div class="catastrophe-card__image">
@@ -54,16 +56,13 @@
                     <div class="catastrophe-card__overlay">
                         <h2 class="catastrophe-card__title">DANA en Valencia</h2>
                         <span class="catastrophe-card__date">29/10/2024</span>
-                        <a href="./dana-valencia-2024.html"class="catastrophe-card__link">
+                        <a href="./dana-valencia-2024.html" class="catastrophe-card__link">
                             <button class="catastrophe-card__button">Ver Más</button>
                         </a>
                     </div>
                 </div>
             </div>
 
-        </section>
-
-        <section class="catastrophes">
             <!-- Tarjeta de catástrofe 3 -->
             <div class="catastrophe-card">
                 <div class="catastrophe-card__image">
@@ -71,7 +70,21 @@
                     <div class="catastrophe-card__overlay">
                         <h2 class="catastrophe-card__title">DANA en Valencia</h2>
                         <span class="catastrophe-card__date">29/10/2024</span>
-                        <a href="./dana-valencia-2024.html"class="catastrophe-card__link">
+                        <a href="./dana-valencia-2024.html" class="catastrophe-card__link">
+                            <button class="catastrophe-card__button">Ver Más</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tarjeta de catástrofe 4 -->
+            <div class="catastrophe-card">
+                <div class="catastrophe-card__image">
+                    <img src="img/dana-valencia.jpg" alt="DANA en Valencia" class="catastrophe-card__img">
+                    <div class="catastrophe-card__overlay">
+                        <h2 class="catastrophe-card__title">DANA en Valencia</h2>
+                        <span class="catastrophe-card__date">29/10/2024</span>
+                        <a href="./dana-valencia-2024.html" class="catastrophe-card__link">
                             <button class="catastrophe-card__button">Ver Más</button>
                         </a>
                     </div>
@@ -80,13 +93,42 @@
 
         </section>
 
+        <!-- Sección de voluntarios-->
+
+        <section class="volunteers">
+            <h2 class="volunteers__title">Apúntate cómo voluntario</h2>
+            <p class="volunteers__text">Tu ayuda es fundamental para apoyar a las personas afectadas por las catástrofes
+                naturales.</p>
+            <button class="volunteers__button">Apuntate</button>
+        </section>
+
+        <!-- Sección de Contactos de Emergencia -->
+        <section class="emergency-contacts">
+            <h2 class="emergency-contacts__title">Contactos de Emergencia</h2>
+            <p class="emergency-contacts__text">Aquí puedes encontrar los números de emergencia en caso de que necesites
+                ayuda inmediata durante una catástrofe natural.</p>
+            <div class="emergency-contacts__numbers">
+                <div class="emergency-contacts__number">
+                    <h3 class="emergency-contacts__number-title">Policía</h3>
+                    <p class="emergency-contacts__number-phone">911</p>
+                </div>
+                <div class="emergency-contacts__number">
+                    <h3 class="emergency-contacts__number-title">Bomberos</h3>
+                    <p class="emergency-contacts__number-phone">112</p>
+                </div>
+                <div class="emergency-contacts__number">
+                    <h3 class="emergency-contacts__number-title">Ambulancias</h3>
+                    <p class="emergency-contacts__number-phone">061</p>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- Footer -->
     <footer class="footer">
-        <p class="footer__text">Lorem ipsum dolor.</p>
+        <p class="footer__text">Catástrofes Naturales 2024 &copy; </p>
     </footer>
-
 </body>
 
 </html>

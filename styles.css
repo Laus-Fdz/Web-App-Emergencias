@@ -5,17 +5,22 @@
   font-family: Helvetica, sans-serif;
 }
 
-/* Header */
+body {
+  background-color: #1D1D1B;
+  /* Color de fondo negro */
+}
 
+/* Header */
 .header {
   background-color: #1D1D1B;
-  color: white;
+  color: #eeeeee;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 20px;
-  margin: 20px;
+  margin: 20px 20px 0px 20px;
   border-radius: 26px;
+  border: 2px solid #eeeeee;
 }
 
 .header__logo-link {
@@ -31,19 +36,42 @@
 }
 
 .header__menu-link {
-  color: white;
+  color: #eeeeee;
   text-decoration: none;
   padding: 5px 10px;
   font-size: 10pt;
 }
 
 /* Main */
-
 .main {
   padding: 20px;
 }
 
+.main-title {
+  border: 2px solid #eeeeee;
+  border-radius: 26px;
+  margin: 0px 0px 20px;
+}
+
+.main-title__title {
+  display: flex;
+  color: #eeeeee;
+  justify-content: center;
+  font-size: 3rem;
+  text-align: center;
+  margin: 20px;
+}
+.main-title__title strong {
+  color: #F9DF22;
+}
+
 /* Tarjetas */
+.catastrophes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
 
 .catastrophe-card {
   position: relative;
@@ -51,8 +79,11 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 26px; 
-  margin: 0px 0px 20px 0px;
+  border-radius: 26px;
+  margin: 0;
+  width: 100%;
+  max-width: 500px;
+  /* Limita el ancho de las tarjetas */
 }
 
 /* Imagen de fondo con transparencia */
@@ -67,10 +98,10 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.5; 
+  opacity: 0.5;
 }
 
-/* Superposición de contenido sobre la imagen */
+/* contenido sobre la imagen */
 .catastrophe-card__overlay {
   position: absolute;
   top: 0;
@@ -80,21 +111,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex;
+  align-items: flex-start;
   color: #1D1D1B;
-  background-color: rgba(255, 255, 255, 0.4); /* Capa blanca superpuesta */
+  background-color: rgb(238, 238, 238, 0.4);
+  /* Capa blanca superpuesta */
   padding: 40px;
 }
 
 .catastrophe-card__date {
-  font-size: 10pt;
+  font-size: 0.9rem;
   margin-bottom: 5px;
-  padding: 5px 10px;
+  color: #eeeeee;
 }
 
 .catastrophe-card__title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 10px 0;
+  color: #eeeeee;
 }
 
 .catastrophe-card__button {
@@ -103,18 +136,83 @@
   padding: 0.5em;
   color: #1D1D1B;
   background-color: #F9DF22;
+  border: none;
   border-radius: 10px;
   text-decoration: none;
 }
 
 .catastrophe-card__button:hover {
   background-color: #1D1D1B;
-  color: white;
+  color: #F9DF22;
 }
 
+/* Sección Voluntarios */
+
+.volunteers {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #eeeeee;
+  border-radius: 26px;
+  margin-top: 20px;
+}
+
+.volunteers__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1D1D1B;
+  margin-bottom: 20px;
+}
+
+.volunteers__text {
+  font-size: 1rem;
+  color: #1D1D1B;
+  margin-bottom: 20px;
+}
+
+.volunteers__button {
+  padding: 0.8em 2em;
+  font-size: 1.1rem;
+  color: #1D1D1B;
+  background-color: #F9DF22;
+  border: none;
+  border-radius: 10px;
+}
+
+.volunteers__button:hover {
+  background-color: #1D1D1B;
+  color: #F9DF22;
+}
+
+/* Sección contactos de emergencia */
+
+.emergency-contacts {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #eeeeee;
+  border-radius: 26px;
+  margin-top: 20px;
+}
+
+.emergency-contacts__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1D1D1B;
+  margin-top: 20px;
+}
+
+.emergency-contacts__text {
+  font-size: 1rem;
+  color: #1D1D1B;
+  margin-bottom: 30px;
+}
+
+.emergency-contacts__numbers {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
 
 /* Footer */
-
 .footer {
   background-color: #1D1D1B;
   color: white;
@@ -122,8 +220,137 @@
   padding: 15px;
   margin: 20px;
   border-radius: 26px;
+  border: 2px solid #eeeeee;
 }
 
 .footer__text {
   font-size: 10pt;
+}
+
+/* Página catástrofe DANA */
+
+/* --- Estilos para el menú interno sticky --- */
+.internal-menu {
+  background-color: #F9DF22;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 26px;
+  position: sticky;
+  top: 10px;
+  z-index: 10;
+}
+
+.internal-menu__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.internal-menu__list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.internal-menu__list li {
+  margin: 10px 0;
+}
+
+.internal-menu__link {
+  color: #1D1D1B;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'helvetica', sans-serif;
+}
+
+.internal-menu__link:hover {
+  text-decoration: 2px solid underline;
+}
+
+/* Sección resumen DANA */
+
+.catastrophe-summary {
+  text-align: center;
+  padding: 40px;
+  background-color: #eeeeee;
+  border-radius: 26px;
+}
+
+.catastrophe-summary__title {
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+
+/* Sección Mapa Valencia */
+
+.catastrophe-zone {
+  text-align: center;
+  padding: 40px;
+  background-color: #1D1D1B;
+  border-radius: 26px;
+  margin-top: 20px;
+  border: 2px solid #eeeeee;
+  color: #eeeeee;
+}
+
+.catastrophe-zone__title {
+  font-size: 2rem;
+  padding-bottom: 20px;
+}
+
+/* Centros de asistencia */
+
+.catastrophe-assistence-centre {
+  background-color: #eeeeee;
+  padding: 20px;
+  border-radius: 26px;
+  margin-top: 20px;
+}
+.catastrophe-assistence-centre__title {
+  font-size: 2rem;
+  color: #1D1D1B;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.centre {
+  background-color: #eeeeee;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 26px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+.centre__name {
+  font-size: 1.5rem;
+  color: #1D1D1B;
+  margin-bottom: 10px;
+}
+
+.centre__details {
+  font-size: 1rem;
+  color: #1D1D1B;
+}
+
+.centre__details strong {
+  font-weight: bold;
+  color: #1D1D1B;
+}
+
+
+/* Ajustes para pantallas grandes (Desktop) */
+@media (min-width: 768px) {
+  .catastrophes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Dos columnas */
+    gap: 20px;
+    justify-items: center;
+  }
+
+  .catastrophe-card {
+    margin: 0;
+    width: 100%;
+    max-width: 450px;
+    /* Ajusta el ancho de las tarjetas en escritorio */
+  }
 }
