@@ -338,7 +338,7 @@ body {
 
 
 /* Ajustes para pantallas grandes (Desktop) */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .catastrophes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
