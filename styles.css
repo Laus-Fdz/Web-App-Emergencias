@@ -7,18 +7,17 @@
 
 body {
   background-color: #1D1D1B;
-  /* Color de fondo negro */
+  color: #eeeeee;
 }
 
 /* Header */
 .header {
   background-color: #1D1D1B;
-  color: #eeeeee;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
-  margin: 20px 20px 0px 20px;
+  padding: 20px;
+  margin: 20px;
   border-radius: 26px;
   border: 2px solid #eeeeee;
 }
@@ -33,6 +32,7 @@ body {
 .header__menu {
   list-style: none;
   display: flex;
+  gap: 15px;
 }
 
 .header__menu-link {
@@ -50,17 +50,16 @@ body {
 .main-title {
   border: 2px solid #eeeeee;
   border-radius: 26px;
-  margin: 0px 0px 20px;
+  margin-bottom: 20px;
 }
 
 .main-title__title {
-  display: flex;
   color: #eeeeee;
-  justify-content: center;
   font-size: 3rem;
   text-align: center;
   margin: 20px;
 }
+
 .main-title__title strong {
   color: #F9DF22;
 }
@@ -75,22 +74,17 @@ body {
 
 .catastrophe-card {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
   border-radius: 26px;
-  margin: 0;
+  overflow: hidden;
   width: 100%;
   max-width: 500px;
-  /* Limita el ancho de las tarjetas */
 }
 
 /* Imagen de fondo con transparencia */
 .catastrophe-card__image {
-  position: relative;
   width: 100%;
   height: 300px;
+  position: relative;
   overflow: hidden;
 }
 
@@ -113,8 +107,7 @@ body {
   justify-content: center;
   align-items: flex-start;
   color: #1D1D1B;
-  background-color: rgb(238, 238, 238, 0.4);
-  /* Capa blanca superpuesta */
+  background-color: rgba(238, 238, 238, 0.4);
   padding: 40px;
 }
 
@@ -147,7 +140,6 @@ body {
 }
 
 /* Sección Voluntarios */
-
 .volunteers {
   text-align: center;
   padding: 40px 20px;
@@ -183,14 +175,14 @@ body {
   color: #F9DF22;
 }
 
-/* Sección contactos de emergencia */
-
+/* Sección Contactos de Emergencia */
 .emergency-contacts {
   text-align: center;
   padding: 40px 20px;
   background-color: #eeeeee;
   border-radius: 26px;
   margin-top: 20px;
+  color: #1D1D1B;
 }
 
 .emergency-contacts__title {
@@ -227,131 +219,118 @@ body {
   font-size: 10pt;
 }
 
-/* Página catástrofe DANA */
-
-/* --- Estilos para el menú interno sticky --- */
-.internal-menu {
-  background-color: #F9DF22;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 26px;
-  position: sticky;
-  top: 10px;
-  z-index: 10;
-}
-
-.internal-menu__nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.internal-menu__list {
-  display: flex;
-  gap: 10px;
-  list-style: none;
-}
-
-.internal-menu__list li {
-  margin: 10px 0;
-}
-
-.internal-menu__link {
-  color: #1D1D1B;
-  text-decoration: none;
-  font-size: 1rem;
-  font-family: 'helvetica', sans-serif;
-}
-
-.internal-menu__link:hover {
-  text-decoration: 2px solid underline;
-}
-
-/* Sección resumen DANA */
-
-.catastrophe-summary {
-  text-align: center;
-  margin-top: 20px;
-  padding: 40px;
-  background-color: #eeeeee;
-  border-radius: 26px;
-}
-
-.catastrophe-summary__title {
-  font-size: 2rem;
-  padding-bottom: 10px;
-}
-
-/* Sección Mapa Valencia */
-
-.catastrophe-zone {
-  text-align: center;
-  padding: 40px;
-  background-color: #1D1D1B;
-  border-radius: 26px;
-  margin-top: 20px;
-  border: 2px solid #eeeeee;
-  color: #eeeeee;
-}
-
-.catastrophe-zone__title {
-  font-size: 2rem;
-  padding-bottom: 20px;
-}
-
-/* Centros de asistencia */
-
-.catastrophe-assistence-centre {
-  background-color: #eeeeee;
-  padding: 20px;
-  border-radius: 26px;
-  margin-top: 20px;
-}
-.catastrophe-assistence-centre__title {
-  font-size: 2rem;
-  color: #1D1D1B;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.centre {
-  background-color: #eeeeee;
-  padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 26px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
-}
-.centre__name {
-  font-size: 1.5rem;
-  color: #1D1D1B;
-  margin-bottom: 10px;
-}
-
-.centre__details {
-  font-size: 1rem;
-  color: #1D1D1B;
-}
-
-.centre__details strong {
-  font-weight: bold;
-  color: #1D1D1B;
-}
-
-
 /* Ajustes para pantallas grandes (Desktop) */
 @media (min-width: 1024px) {
-  .catastrophes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    /* Dos columnas */
-    gap: 20px;
-    justify-items: center;
+
+  .header {
+    padding: 20px 50px;
+    margin: 20px auto;
+    max-width: 1200px;
   }
 
-  .catastrophe-card {
-    margin: 0;
-    width: 100%;
-    max-width: 450px;
-    /* Ajusta el ancho de las tarjetas en escritorio */
+  .header__logo-link {
+    font-size: 20pt;
   }
-}
+
+  .header__menu {
+    gap: 25px;
+  }
+
+  .header__menu-link {
+    font-size: 12pt;
+  }
+
+    /* Main */
+    .main {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 50px;
+    }
+  
+    .main-title {
+      max-width: 100%;
+      margin: 0 auto 20px;
+    }
+  
+    .main-title__title {
+      font-size: 3.5rem;
+      margin: 30px;
+    }
+  
+    /* Tarjetas */
+    .catastrophes {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  
+    .catastrophe-card {
+      max-width: 500px;
+    }
+  
+    .catastrophe-card__image {
+      height: 350px;
+    }
+  
+    .catastrophe-card__title {
+      font-size: 2.2rem;
+    }
+  
+    .catastrophe-card__button {
+      padding: 0.7em 1.2em;
+      font-size: 1rem;
+    }
+  
+    /* Sección Voluntarios */
+    .volunteers {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 50px;
+    }
+  
+    .volunteers__title {
+      font-size: 2.5rem;
+    }
+  
+    .volunteers__text {
+      font-size: 1.2rem;
+    }
+  
+    .volunteers__button {
+      padding: 1em 2.5em;
+      font-size: 1.2rem;
+    }
+  
+    /* Sección Contactos de Emergencia */
+    .emergency-contacts {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 50px;
+    }
+  
+    .emergency-contacts__title {
+      font-size: 2.5rem;
+    }
+  
+    .emergency-contacts__text {
+      font-size: 1.2rem;
+    }
+  
+    .emergency-contacts__numbers {
+      gap: 50px;
+    }
+  
+    /* Footer */
+    .footer {
+      max-width: 1200px;
+      margin: 30px auto;
+      padding: 20px 50px;
+    }
+  
+    .footer__text {
+      font-size: 12pt;
+    }
+  }
+
